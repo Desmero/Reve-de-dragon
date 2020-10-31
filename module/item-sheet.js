@@ -7,8 +7,8 @@ export class SimpleItemSheet extends ItemSheet {
   /** @override */
 	static get defaultOptions() {
 	  return mergeObject(super.defaultOptions, {
-			classes: ["worldbuilding", "sheet", "item"],
-			template: "systems/worldbuilding/templates/item-sheet.html",
+			classes: ["Reve-de-dragon", "sheet", "item"],
+			template: "systems/Reve-de-dragon/templates/item-sheet.html",
 			width: 520,
 			height: 480,
       tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description"}]

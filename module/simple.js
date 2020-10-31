@@ -31,12 +31,12 @@ Hooks.once("init", async function () {
 
     // Register sheet application classes
     Actors.unregisterSheet("core", ActorSheet);
-    Actors.registerSheet("worldbuilding", SimpleActorSheet, {makeDefault: true});
+    Actors.registerSheet("Reve-de-dragon", SimpleActorSheet, {makeDefault: true});
     Items.unregisterSheet("core", ItemSheet);
-    Items.registerSheet("worldbuilding", SimpleItemSheet, {makeDefault: true});
+    Items.registerSheet("Reve-de-dragon", SimpleItemSheet, {makeDefault: true});
 
     // Register system settings
-    game.settings.register("worldbuilding", "macroShorthand", {
+    game.settings.register("Reve-de-dragon", "macroShorthand", {
         name: "SETTINGS.SimpleMacroShorthandN",
         hint: "SETTINGS.SimpleMacroShorthandL",
         scope: "world",
@@ -46,7 +46,7 @@ Hooks.once("init", async function () {
     });
 
     // Register initiative setting.
-    game.settings.register("worldbuilding", "initFormula", {
+    game.settings.register("Reve-de-dragon", "initFormula", {
         name: "SETTINGS.SimpleInitFormulaN",
         hint: "SETTINGS.SimpleInitFormulaL",
         scope: "world",
@@ -57,7 +57,7 @@ Hooks.once("init", async function () {
     });
 
     // Retrieve and assign the initiative formula setting.
-    const initFormula = game.settings.get("worldbuilding", "initFormula");
+    const initFormula = game.settings.get("Reve-de-dragon", "initFormula");
     _simpleUpdateInit(initFormula);
 
     /**

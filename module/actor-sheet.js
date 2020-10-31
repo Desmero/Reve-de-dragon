@@ -7,8 +7,8 @@ export class SimpleActorSheet extends ActorSheet {
     /** @override */
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-            classes: ["worldbuilding", "sheet", "actor"],
-            template: "systems/revededragon/templates/actor-sheet.html",
+            classes: ["Reve-de-dragon", "sheet", "actor"],
+            template: "systems/Reve-de-dragon/templates/actor-sheet.html",
             width: 800,
             height: 800,
             tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "biography"}],
@@ -22,7 +22,7 @@ export class SimpleActorSheet extends ActorSheet {
     getData() {
         const data = super.getData();
         data.dtypes = ["String", "Number", "Boolean", "Formula", "Resource"];
-        data.shorthand = !!game.settings.get("worldbuilding", "macroShorthand");
+        data.shorthand = !!game.settings.get("Reve-de-dragon", "macroShorthand");
         return data;
     }
 

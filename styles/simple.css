@@ -1,16 +1,16 @@
-.worldbuilding {
+.Reve-de-dragon {
     /* Sheet Tabs */
     /* Items List */
     /* Attributes */
 }
 
-.worldbuilding .window-content {
+.Reve-de-dragon .window-content {
     height: 100%;
     padding: 5px;
     overflow-y: hidden;
 }
 
-.worldbuilding .sheet-header {
+.Reve-de-dragon .sheet-header {
     height: 100px;
     overflow: hidden;
     display: flex;
@@ -20,25 +20,25 @@
     margin-bottom: 10px;
 }
 
-.worldbuilding .sheet-header .profile-img {
+.Reve-de-dragon .sheet-header .profile-img {
     flex: 0 0 100px;
     height: 100px;
     margin-right: 10px;
 }
 
-.worldbuilding .sheet-header .header-fields {
+.Reve-de-dragon .sheet-header .header-fields {
     flex: 1;
     height: 100px;
 }
 
-.worldbuilding .sheet-header h1.charname {
+.Reve-de-dragon .sheet-header h1.charname {
     height: 50px;
-    padding: 0px;
+    padding: 0;
     margin: 5px 0;
     border-bottom: 0;
 }
 
-.worldbuilding .sheet-header h1.charname input {
+.Reve-de-dragon .sheet-header h1.charname input {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -50,7 +50,6 @@ input[type="number"] {
     height: 28px;
     background: rgba(0, 0, 0, 0.05);
     padding: 1px 3px;
-    padding-left: 3px;
     padding-left: 3px;
     margin: 0;
     color: #191813;
@@ -66,11 +65,11 @@ input[type="number"] {
     user-select: text;
 }
 
-.worldbuilding .flex {
+.Reve-de-dragon .flex {
     display: flex;
 }
 
-.worldbuilding .resource {
+.Reve-de-dragon .resource {
     width: 50%;
     height: 40px;
     margin-bottom: 10px;
@@ -78,95 +77,95 @@ input[type="number"] {
     text-align: left;
 }
 
-.worldbuilding .resource.tiny {
+.Reve-de-dragon .resource.tiny {
     width: 12.5%;
 }
 
-.worldbuilding .resource.small {
+.Reve-de-dragon .resource.small {
     width: 25%;
 }
 
-.worldbuilding .resource.third {
+.Reve-de-dragon .resource.third {
     width: 33%;
 }
 
-.worldbuilding .resource.large {
+.Reve-de-dragon .resource.large {
     width: 100%;
 }
 
-.worldbuilding .resource input {
+.Reve-de-dragon .resource input {
     width: 100%;
     height: 28px;
     padding-left: 5px;
 }
 
-.worldbuilding .resource.split input {
+.Reve-de-dragon .resource.split input {
     width: 45%;
 }
 
-.worldbuilding .resource.split span {
+.Reve-de-dragon .resource.split span {
     width: 10%;
 }
 
-.worldbuilding .resource label {
+.Reve-de-dragon .resource label {
     width: 100%;
     height: 20px;
     display: inline-block;
 }
 
-.worldbuilding .tiredness input[type="checkbox"]{
+.Reve-de-dragon .tiredness input[type="checkbox"]{
     width: 14px;
     margin-right: -5px;
 }
 
-.worldbuilding .tiredness .penalty {
+.Reve-de-dragon .tiredness .penalty {
     width: 10px;
     margin-top: 4px;
     height: 20px;
 }
 
-.worldbuilding .tiredness .checkbox {
+.Reve-de-dragon .tiredness .checkbox {
     width: 30%;
 }
 
-.worldbuilding .tabs {
+.Reve-de-dragon .tabs {
     height: 40px;
     border-top: 1px solid #AAA;
     border-bottom: 1px solid #AAA;
 }
 
-.worldbuilding .tabs .item {
+.Reve-de-dragon .tabs .item {
     line-height: 40px;
     font-weight: bold;
 }
 
-.worldbuilding .tabs .item.active {
+.Reve-de-dragon .tabs .item.active {
     text-decoration: underline;
     text-shadow: none;
 }
 
-.worldbuilding .sheet-body {
+.Reve-de-dragon .sheet-body {
     overflow: hidden;
 }
 
-.worldbuilding .sheet-body .tab {
+.Reve-de-dragon .sheet-body .tab {
     height: 100%;
     overflow-y: auto;
 }
 
-.worldbuilding .editor,
-.worldbuilding .editor-content {
+.Reve-de-dragon .editor,
+.Reve-de-dragon .editor-content {
     height: 100%;
 }
 
-.worldbuilding .item-list {
+.Reve-de-dragon .item-list {
     list-style: none;
     margin: 7px 0;
     padding: 0;
     overflow-y: auto;
 }
 
-.worldbuilding .item-list .item {
+.Reve-de-dragon .item-list .item {
     min-height: 30px;
     line-height: 24px;
     padding: 3px 0;
@@ -174,20 +173,20 @@ input[type="number"] {
     align-items: stretch;
 }
 
-.worldbuilding .item-list .item img {
+.Reve-de-dragon .item-list .item img {
     flex: 0 0 24px;
     margin-right: 5px;
 }
 
-.worldbuilding .item-list .item-name {
+.Reve-de-dragon .item-list .item-name {
     margin: 0;
 }
 
-.worldbuilding .item-list .item-controls {
+.Reve-de-dragon .item-list .item-controls {
     flex: 0 0 36px;
 }
 
-.worldbuilding .item-list .item-buttons {
+.Reve-de-dragon .item-list .item-buttons {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -196,14 +195,14 @@ input[type="number"] {
     justify-content: flex-start;
 }
 
-.worldbuilding .item-list .item-button {
+.Reve-de-dragon .item-list .item-button {
     line-height: 1;
     font-size: 11px;
     flex: none;
     width: auto;
 }
 
-.worldbuilding .attributes-header {
+.Reve-de-dragon .attributes-header {
     padding: 5px;
     margin: 5px 0;
     background: rgba(0, 0, 0, 0.05);
@@ -213,21 +212,21 @@ input[type="number"] {
     font-weight: bold;
 }
 
-.worldbuilding .attributes-header .attribute-label {
+.Reve-de-dragon .attributes-header .attribute-label {
     flex: 1.5;
 }
 
-.worldbuilding .attributes-header .attribute-control {
+.Reve-de-dragon .attributes-header .attribute-control {
     flex: 0 0 20px;
 }
 
-.worldbuilding .attributes-list {
+.Reve-de-dragon .attributes-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.worldbuilding .attributes-list li > * {
+.Reve-de-dragon .attributes-list li > * {
     margin: 0 3px;
     height: 28px;
     line-height: 24px;
@@ -237,27 +236,27 @@ input[type="number"] {
     border-bottom: 1px solid #AAA;
 }
 
-.worldbuilding .attributes-list a.attribute-control {
+.Reve-de-dragon .attributes-list a.attribute-control {
     flex: 0 0 20px;
     text-align: center;
     line-height: 28px;
     border: none;
 }
 
-.worldbuilding .attributes-list .attribute-col label {
+.Reve-de-dragon .attributes-list .attribute-col label {
     font-size: 10px;
     text-align: center;
     line-height: 1;
 }
 
-.worldbuilding .attributes-list .attribute-col input {
+.Reve-de-dragon .attributes-list .attribute-col input {
     font-size: 11px;
     text-align: center;
     line-height: 1;
     height: 50%;
 }
 
-.worldbuilding .skills-header {
+.Reve-de-dragon .skills-header {
     padding: 5px;
     margin: 5px 0;
     background: rgba(0, 0, 0, 0.05);
@@ -267,21 +266,21 @@ input[type="number"] {
     font-weight: bold;
 }
 
-.worldbuilding .skills-header .skill-label {
+.Reve-de-dragon .skills-header .skill-label {
     flex: 1.5;
 }
 
-.worldbuilding .skills-header .skill-control {
+.Reve-de-dragon .skills-header .skill-control {
     flex: 0 0 20px;
 }
 
-.worldbuilding .skills-list {
+.Reve-de-dragon .skills-list {
     list-style: none;
     margin: 0;
     padding: 0 2px 0 2px;
 }
 
-.worldbuilding .skills-list li > * {
+.Reve-de-dragon .skills-list li > * {
     margin: 0 3px;
     height: 28px;
     line-height: 24px;
@@ -291,20 +290,20 @@ input[type="number"] {
     border-bottom: 1px solid #AAA;
 }
 
-.worldbuilding .skills-list a.skill-control {
+.Reve-de-dragon .skills-list a.skill-control {
     flex: 0 0 20px;
     text-align: center;
     line-height: 28px;
     border: none;
 }
 
-.worldbuilding .skills-list .skill-col label {
+.Reve-de-dragon .skills-list .skill-col label {
     font-size: 10px;
     text-align: center;
     line-height: 1;
 }
 
-.worldbuilding .skills-list .skill-col input {
+.Reve-de-dragon .skills-list .skill-col input {
     font-size: 11px;
     text-align: center;
     line-height: 1;
@@ -325,12 +324,12 @@ input[type="number"] {
     width: 50px;
 }
 
-.worldbuilding.sheet.actor {
+.Reve-de-dragon.sheet.actor {
     min-width: 560px;
     min-height: 420px;
 }
 
-.worldbuilding.sheet.item {
+.Reve-de-dragon.sheet.item {
     min-width: 460px;
     min-height: 400px;
 }

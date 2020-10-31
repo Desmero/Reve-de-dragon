@@ -1,10 +1,10 @@
 {
-  "name": "revededragon",
-  "title": "Rêve de Dragon [WIP]",
+  "name": "Reve-de-dragon",
+  "title": "Rêve de Dragon",
   "description": "Un système de jeu pour le JdR français Rêve de Dragon",
   "version": 0.1,
-  "minimumCoreVersion": "0.6.6",
-  "compatibleCoreVersion": "0.6.6",
+  "minimumCoreVersion": "0.7.5",
+  "compatibleCoreVersion": "0.7.5",
   "templateVersion": 2,
   "author": "Desmero",
   "esmodules": [
@@ -25,5 +25,6 @@
   "gridUnits": "m",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
+  "url": "https://github.com/Desmero/Reve-de-dragon/",
   "license": "LICENSE.txt"
 }
