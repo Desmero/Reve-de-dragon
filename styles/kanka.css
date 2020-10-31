@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fondamento&family=Homemade+Apple&family=Kalam&family=Sacramento&family=Shadows+Into+Light&family=Sorts+Mill+Goudy:ital@1&display=swap');
+
 /*font*/
 h1, h1 a, h3, h3 a, .campaign-name {
-    font-family: "Goudy Old Style","Times New Roman",Roboto,Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: "Sorts Mill Goudy", "Times New Roman", serif;
 }
 
 section.sidebar-campaign .campaign-block .campaign-head {
     font-size: 2em;
+}
+
+section.sidebar-campaign .campaign-block .campaign-head {
+    line-height: 26px;
 }
 
 .campaign .content h1 {
@@ -16,7 +22,9 @@ section.sidebar-campaign .campaign-block .campaign-head {
 }
 
 .content-header h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
+    font-family: "Sorts Mill Goudy", "Times New Roman", serif;
+    color: #393551;
 }
 
 .panel .panel-heading-entity h3 a {
@@ -25,8 +33,31 @@ section.sidebar-campaign .campaign-block .campaign-head {
 
 /*colors*/
 
+.calendar-toolbar, table, .btn {
+    font-family: Roboto,Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+
 /*background #EEE9D8 */
 .content-wrapper {
+    background: url(https://kanka-user-assets.s3.eu-central-1.amazonaws.com/entities/files/P2WIQQmsfvdARz4lmjCnpxcKJmgmtGgqNSEMEupl.png) no-repeat -45px -103px,
+    url(https://kanka-user-assets.s3.eu-central-1.amazonaws.com/entities/files/2oVWB1RuYB7qDXq6efopwDxzOaJzIi8109HtB6aV.png) -45px 1408px
+    #EEE9D8;
+    background-size: auto, auto;
+    background-size: 2116px;
+    padding: 0px 0px 0px 45px;
+}
+
+.navbar.navbar-static-top {
+    background: linear-gradient(rgba(10, 10, 10, 0.25), rgba(10, 10, 10, 0.1)),url(https://kanka-user-assets.s3.eu-central-1.amazonaws.com/entities/files/P2WIQQmsfvdARz4lmjCnpxcKJmgmtGgqNSEMEupl.png) no-repeat -45px -53px, #EEE9D8;
+    background-size: auto, auto, auto;
+    background-size: 2116px;
+}
+
+hr {
+    border-top: 1px solid #EEE9D8;
+}
+
+.dropdown-menu > .divider {
     background-color: #EEE9D8;
 }
 
@@ -35,6 +66,7 @@ section.sidebar-campaign .campaign-block .campaign-head {
 .leaflet-container {
     background: #F9F5E9;
 }
+
 .entity-form ul.nav li,
 .table-striped > tbody > tr:nth-of-type(2n+1) {
     background-color: #F9F5E9;
@@ -45,18 +77,20 @@ section.sidebar-campaign .campaign-block .campaign-head {
 .nav-tabs-custom > .tab-content,
 .timeline > li > .timeline-item,
 .leaflet-popup-content-wrapper,
-.leaflet-popup-tip ,
+.leaflet-popup-tip,
 .leaflet-control-layers {
     background: #FDFBF4;
 }
+
 .no-header .content,
 .box-footer,
 .panel,
 .list-group-item,
-.nav-tabs-custom>.nav-tabs>li.active:hover>a,
-.nav-tabs-custom>.nav-tabs>li.active>a,
+.nav-tabs-custom > .nav-tabs > li.active:hover > a,
+.nav-tabs-custom > .nav-tabs > li.active > a,
 .leaflet-bar a,
-.leaflet-bar a:hover{
+.leaflet-bar a:hover,
+.dropdown-menu {
     background-color: #FDFBF4;
 }
 
@@ -64,7 +98,9 @@ section.sidebar-campaign .campaign-block .campaign-head {
 .no-header .content {
     border: 1px solid #664437;
 }
-.panel-default {
+
+.panel-default,
+.dropdown-menu {
     border-color: #664437;
 }
 
@@ -77,6 +113,7 @@ section.sidebar-campaign .campaign-block .campaign-head {
 .nav-tabs-custom > .nav-tabs > li.active {
     border-top-color: #6f0f0f;
 }
+
 .nav-stacked > li.active > a, .nav-stacked > li.active > a:hover {
     border-left-color: #6f0f0f;
 }
@@ -85,53 +122,59 @@ section.sidebar-campaign .campaign-block .campaign-head {
 .campaign .content .campaign-link {
     background: rgba(70, 45, 14, 0.2);
 }
+
 .panel-default > .panel-heading {
     background-color: #F9F5E9;
     border-color: #664437;
 }
+
 .btn-default {
     background-color: #F9F5E9;
     border-color: #664437;
 }
+
 .btn-default.hover,
 .btn-default:active,
 .btn-default:hover {
-    background-color:#EEE9D8;
+    background-color: #EEE9D8;
     border-color: #664437;
     color: #444;
 }
+
 .btn-success {
     background-color: #406805;
     border-color: #263e03;
     color: #EEE9D8;
 }
+
 .btn-success.hover,
 .btn-success:active,
 .btn-success:hover {
-    background-color:#263e03;
+    background-color: #263e03;
     border-color: #263e03;
     color: #EEE9D8;
 }
+
 .btn-primary {
     background-color: #1e5eac;
     border-color: #194b88;
     color: #EEE9D8;
 }
+
 .btn-primary.hover,
 .btn-primary:active,
 .btn-primary:hover {
-    background-color:#194b88;
+    background-color: #194b88;
     border-color: #194b88;
     color: #EEE9D8;
 }
-.btn-map-explore{
-    color: #EEE9D8 !important;
-}
+
 .btn-danger {
     background-color: #73230a;
     border-color: #5a1a08;
     color: #EEE9D8;
 }
+
 .btn-danger.hover,
 .btn-danger:active,
 .btn-danger:hover {
@@ -140,6 +183,16 @@ section.sidebar-campaign .campaign-block .campaign-head {
     color: #EEE9D8;
 }
 
+.btn-map-explore {
+    color: #EEE9D8 !important;
+}
+
+.entity-creator a {
+    color: #EEE9D8;
+    background-color: #1e5eac;
+}
+
+/* alerts */
 .alert-success {
     border-color: #263e03;
 }
@@ -148,7 +201,133 @@ section.sidebar-campaign .campaign-block .campaign-head {
     background-color: #406805 !important;
 }
 
+.alert .close {
+    color: #EEE9D8;
+    opacity: 0.8;
+}
+
 /*icons*/
 .entity-image, .entity-image-mention, .product-img .entity-image {
     border-radius: 10%;
+}
+
+
+/* Made by Ornstein, maybe sloppy, to create 'letter' styles for journals and notes */
+
+/*Import fonts from google for handwritten letters; there are 6.*/
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fondamento&family=Homemade+Apple&family=Kalam&family=Sacramento&family=Shadows+Into+Light&display=swap'); */
+
+/*Certain things ignore the master styling. Need to overrwrite. Lists and block quotes*/
+.lback li {
+    background: transparent;
+    color: black;
+}
+
+.lback hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.lback a {
+    color: DarkBlue;
+}
+
+.letter blockquote {
+    background: transparent;
+    color: black;
+    font-size: 1.1em;
+    border-left: 5px double black;
+}
+
+/*Trying to get the table borders*/
+.letter table {
+    border-collapse: collapse;
+}
+
+.letter table td {
+    border: 4px solid black;
+}
+
+
+.hand1 {
+    font-family: 'Kalam', cursive;
+}
+
+.hand2 {
+    font-size: 1.5em;
+    font-family: 'Sacramento', cursive;
+}
+
+.hand3 {
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.hand4 {
+    font-family: 'Fondamento', cursive;
+}
+
+.hand5 {
+    font-family: 'Homemade Apple', cursive;
+}
+
+.hand6 {
+    font-size: 1.1em;
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
+.sig {
+    font-size: 2em;
+}
+
+.letter a, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
+
+div#entry.tab-pane.active,
+div.handWrite {
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)),url("https://kanka-user-assets.s3.eu-central-1.amazonaws.com/entities/files/2qlJ34a9kVIAc55EsBOOzgQXNHsNeyuqx2ri20CR.png") no-repeat center top;
+    background-size: 100%;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    color: black;
+    box-shadow: 3px 3px 5px #8c8c8c;
+    line-height: 1.4em;
+}
+
+div#entry table,
+div#entry table th {
+    border: 0px;
+}
+
+div#entry.tab-pane.active table {
+    border-collapse: collapse;
+}
+
+div#entry.tab-pane.active table td {
+    border: 4px solid black;
+}
+
+div#entry.tab-pane.active li {
+    background: transparent;
+    color: black;
+}
+
+div#entry.tab-pane.active hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+div#entry.tab-pane.active a {
+    color: DarkBlue;
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
 }
