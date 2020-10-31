@@ -1,0 +1,562 @@
+{
+  "Actor": {
+    "types": [
+      "character"
+    ],
+    "character": {
+      "description": {
+        "biography": "",
+        "age": 18,
+        "sex": "",
+        "height": "",
+        "weight": "",
+        "hairs": "",
+        "eyes": "",
+        "beauty": "",
+        "birthHour": "",
+        "traits": ""
+      },
+      "attributes": {
+        "size": {
+          "value": 10,
+          "xp": "NaN"
+        },
+        "appearance": {
+          "value": 10,
+          "xp": 0
+        },
+        "constitution": {
+          "value": 10,
+          "xp": 0
+        },
+        "strength": {
+          "value": 10,
+          "xp": 0
+        },
+        "agility": {
+          "value": 10,
+          "xp": 0
+        },
+        "dexterity": {
+          "value": 10,
+          "xp": 0
+        },
+        "eyesight": {
+          "value": 10,
+          "xp": 0
+        },
+        "hearing": {
+          "value": 10,
+          "xp": 0
+        },
+        "smell-taste": {
+          "value": 10,
+          "xp": 0
+        },
+        "willpower": {
+          "value": 10,
+          "xp": 0
+        },
+        "intellect": {
+          "value": 10,
+          "xp": 0
+        },
+        "empathy": {
+          "value": 10,
+          "xp": 0
+        },
+        "dream": {
+          "value": 10,
+          "xp": 0
+        },
+        "luck": {
+          "value": 10,
+          "xp": 0
+        },
+        "melee": {
+          "computed": 1
+        },
+        "shoot": {
+          "computed": 1
+        },
+        "throw": {
+          "computed": 1
+        },
+        "stealth": {
+          "computed": 1
+        }
+      },
+      "skills": {
+        "makeshift": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "singing": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "running": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "cooking": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "dancing": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "draw": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "discretion": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "climbing": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "jump": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "seduction": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "vigilance": {
+          "type": "soft",
+          "value": -4,
+          "xp": 0,
+          "arch": 0
+        },
+        "carpentry": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "comedy": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "commerce": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "riding": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "stonework": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "music": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "pickpocket": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "townSrv": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "outsideSrv": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "desertSrv": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "forestSrv": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "icelandSrv": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "marshSrv": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "hillSrv": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "undergroundSrv": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "disguise": {
+          "type": "special",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "acrobatics": {
+          "type": "specialized",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "surgery": {
+          "type": "specialized",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "gambling": {
+          "type": "specialized",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "jugglery": {
+          "type": "specialized",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "leatherCraft": {
+          "type": "specialized",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "metallurgy": {
+          "type": "specialized",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "swimming": {
+          "type": "specialized",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "navigation": {
+          "type": "specialized",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "goldsmith": {
+          "type": "specialized",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "locksmith": {
+          "type": "specialized",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "alchemy": {
+          "type": "knowledge",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "astrology": {
+          "type": "knowledge",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "botany": {
+          "type": "knowledge",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "writing": {
+          "type": "knowledge",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "legends": {
+          "type": "knowledge",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "medicine": {
+          "type": "knowledge",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "zoology": {
+          "type": "knowledge",
+          "value": -11,
+          "xp": 0,
+          "arch": 0
+        },
+        "oniros": {
+          "type": "draconic",
+          "value": -11,
+          "xp": {
+            "spell": 0,
+            "path": 0
+          },
+          "arch": 0
+        },
+        "narcos": {
+          "type": "draconic",
+          "value": -11,
+          "xp": {
+            "spell": 0,
+            "path": 0
+          },
+          "arch": 0
+        },
+        "hypnos": {
+          "type": "draconic",
+          "value": -11,
+          "xp": {
+            "spell": 0,
+            "path": 0
+          },
+          "arch": 0
+        },
+        "thanatos": {
+          "type": "draconic",
+          "value": -11,
+          "xp": {
+            "spell": 0,
+            "path": 0
+          },
+          "arch": 0
+        },
+        "poleWeapon": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "shield": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "bareHands": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "dagger": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "sword1": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "sword2": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "dodge": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "flail": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "axe1": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "axe2": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "spear": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "mace1": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "mace2": {
+          "type": "melee",
+          "value": -6,
+          "xp": 0,
+          "arch": 0
+        },
+        "crossbow": {
+          "type": "distance",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "bow": {
+          "type": "distance",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "daggerThrow": {
+          "type": "distance",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "wipe": {
+          "type": "distance",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "sling": {
+          "type": "distance",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        },
+        "javelin": {
+          "type": "distance",
+          "value": -8,
+          "xp": 0,
+          "arch": 0
+        }
+      },
+      "vital": {
+        "health": {
+          "current": 10,
+          "max": 10
+        },
+        "endurance:": {
+          "current": 20,
+          "max": 20
+        },
+        "wounds": {
+          "slight": {},
+          "serious": {},
+          "critical": {}
+        },
+        "tiredness": {
+          "max": 20,
+          "current": 0
+        },
+        "alcoholism": 0
+      },
+      "traveling": {
+        "threshold": {
+          "starvation": 3,
+          "bulk": 10,
+          "constitution": 3,
+          "dream": 10
+        },
+        "dream": 10,
+        "luck": 10,
+        "food": 0,
+        "water": 0,
+        "moral": {
+          "current": 0,
+          "exaltation": 0
+        },
+        "destiny": {
+          "current": 0,
+          "travellingPoint": 0
+        },
+        "stress": 0,
+        "damageBonus": 0,
+        "armorPenalty": 0,
+        "hazards": ""
+      }
+    }
+  },
+  "Item": {
+    "types": [
+      "item"
+    ],
+    "item": {
+      "description": "",
+      "quantity": 1,
+      "weight": 0,
+      "attributes": {}
+    }
+  }
+}

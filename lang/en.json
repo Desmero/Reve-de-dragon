@@ -1,0 +1,18 @@
+{
+  "RDD.tab.biography": "Biography",
+  "RDD.tab.description": "Description",
+  "RDD.tab.attributes": "Attributes",
+  "RDD.tab.skills": "Skills",
+  "RDD.tab.travel": "Travel",
+  "RDD.tab.items": "Inventory",
+  "RDD.tab.spells": "Spells",
+
+  "RDD.description.age": "Age",
+  "RDD.description.sex": "Sex",
+  "RDD.description.height": "Height",
+  "RDD.description.weight": "Weight",
+  "RDD.description.hair": "Hair",
+  "RDD.description.eyes": "Eyes",
+  "RDD.description.beauty": "Beauty"
+
+}

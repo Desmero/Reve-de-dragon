@@ -1,0 +1,81 @@
+Compétences générales (-4)
+Bricolage
+Chant
+Course
+Cuisine
+Danse
+Dessin
+Discrétion
+Escalade
+Saut
+Séduction
+Vigilance
+Compétences spécialisées (-11)
+Acrobatie
+Chirurgie
+Jeu
+Jonglerie
+Maroquinerie
+Métallurgie
+Natation
+Navigation
+Orfèvrerie
+Serrurerie
+Compétences particulières (-8)
+Charpenterie
+Comédie
+Commerce
+Équitation
+Maçonnerie
+Musique
+Pickpocket
+Survie en cité
+Survie extérieur
+Désert
+Forêt
+Glaces
+Marais
+Montagne
+Sous-sol
+Travestissement
+Connaissances (-11)
+Alchimie
+Astrologie
+Botanique
+Écriture
+Légendes
+Médecine
+Zoologie Draconic (-11)
+voie sort voie sort
+Oniros
+Narcos
+Hypnos
+Thanatos
+Combat
+Arme Niv Init +dom Exp
+Corps à corps
+Dague de mêlée
+Esquive
+
+
+Arme d’hast
+Bouclier
+Corps à corps
+Dague
+épée 1 main
+épée 2 mains
+Esquive
+Fléau
+Hache 1 main
+Hache 2 mains
+Lance
+Masse 1 main
+Masse 2 mains
+
+
+Arbalète
+Arc
+Dague
+Fouet
+Fronde
+Javelot

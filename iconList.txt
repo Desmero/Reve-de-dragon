@@ -1,0 +1,18 @@
+size	https://game-icons.net/1x1/delapouite/body-height.html
+appearance	https://game-icons.net/1x1/delapouite/mona-lisa.html
+constitution	https://game-icons.net/1x1/skoll/fat.html
+strength	https://game-icons.net/1x1/delapouite/weight-lifting-up.html
+agility	https://game-icons.net/1x1/delapouite/van-damme-split.html
+dexterity	https://game-icons.net/1x1/lorc/juggler.html
+eyesight	https://game-icons.net/1x1/lorc/eyeball.html
+hearing	https://game-icons.net/1x1/delapouite/human-ear.html
+smell	https://game-icons.net/1x1/delapouite/nose-side.html
+willpower	https://game-icons.net/1x1/lorc/psychic-waves.html	https://game-icons.net/1x1/lorc/suspicious.html
+intellect	https://game-icons.net/1x1/delapouite/think.html	https://game-icons.net/1x1/lorc/brain.html
+empathy	https://game-icons.net/1x1/delapouite/love-mystery.html
+dream	https://game-icons.net/1x1/lorc/night-sky.html
+luck	https://game-icons.net/1x1/lorc/clover.html
+melee	https://game-icons.net/1x1/lorc/broad-dagger.html
+shoot	https://game-icons.net/1x1/lorc/pocket-bow.html
+throw	https://game-icons.net/1x1/lorc/thrown-knife.html
+stealth	https://game-icons.net/1x1/delapouite/invisible.html

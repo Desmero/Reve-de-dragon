@@ -1,0 +1,29 @@
+{
+  "name": "revededragon",
+  "title": "Rêve de Dragon [WIP]",
+  "description": "Un système de jeu pour le JdR français Rêve de Dragon",
+  "version": 0.1,
+  "minimumCoreVersion": "0.6.6",
+  "compatibleCoreVersion": "0.6.6",
+  "templateVersion": 2,
+  "author": "Desmero",
+  "esmodules": [
+    "module/simple.js"
+  ],
+  "styles": [
+    "styles/simple.css"
+  ],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "license": "LICENSE.txt"
+}

@@ -1,0 +1,541 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="biography">{{localize 'RDD.actor.tab.biography'}}</a>
+        <a class="item" data-tab="travel">{{localize 'RDD.actor.tab.travel'}}</a>
+        <a class="item" data-tab="attributes">{{localize 'RDD.actor.tab.attributes'}}</a>
+        <a class="item" data-tab="skills">{{localize 'RDD.actor.tab.skills'}}</a>
+        <a class="item" data-tab="items">{{localize 'RDD.actor.tab.items'}}</a>
+        <a class="item" data-tab="spells">{{localize 'RDD.actor.tab.spells'}}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Biography Tab --}}
+        <div class="tab biography" data-group="primary" data-tab="biography">
+            <div>
+                <div class="flex">
+                    <div class="resource small">
+                        <label>{{localize 'RDD.actor.description.age'}}</label>
+                        <input type="text" name="data.description.age" value="{{data.description.age}}"/>
+                    </div>
+                    <div class="resource small">
+                        <label>{{localize 'RDD.actor.description.sex'}}</label>
+                        <input type="text" name="data.description.sex" value="{{data.description.sex}}"/>
+                    </div>
+                    <div class="resource small">
+                        <label>{{localize 'RDD.actor.description.height'}}</label>
+                        <input type="text" name="data.description.height" value="{{data.description.height}}"/>
+                    </div>
+                    <div class="resource small">
+                        <label>{{localize 'RDD.actor.description.weight'}}</label>
+                        <input type="text" name="data.description.weight" value="{{data.description.weight}}"/>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="resource">
+                        <label>{{localize 'RDD.actor.description.hair'}}</label>
+                        <input type="text" name="data.description.hair" value="{{data.description.hair}}"/>
+                    </div>
+                    <div class="resource small">
+                        <label>{{localize 'RDD.actor.description.eyes'}}</label>
+                        <input type="text" name="data.description.eyes" value="{{data.description.eyes}}"/>
+                    </div>
+                    <div class="resource small">
+                        <label>{{localize 'RDD.actor.description.beauty'}}</label>
+                        <input type="text" name="data.description.beauty" value="{{data.description.beauty}}"/>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="resource large">
+                        <label>{{localize 'RDD.actor.description.birthHour'}}</label>
+                        <input type="text" name="data.description.birthHour" value="{{data.description.birthHour}}"/>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="resource large">
+                        <label>{{localize 'RDD.actor.description.traits'}}</label>
+                        <input type="text" name="data.description.traits" value="{{data.description.traits}}"/>
+                    </div>
+                </div>
+            </div>
+            {{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
+        </div>
+
+        {{!-- Traveler Tab --}}
+        <div class="tab travel" data-group="primary" data-tab="travel">
+
+            <!-- Travel sheet -->
+            <div>
+                <div class="flex">
+                    <!-- Misc values -->
+                    <div style="width: 55%">
+
+                        <div class="flex">
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.dream'}}</label>
+                                <input type="number" name="data.vital.dream.current" value="{{data.vital.dream.current}}" min="0" max="{{data.attributes.dream.value}}"/>
+                            </div>
+                            <div class="resource">
+                                <label>{{localize 'RDD.label.max'}}</label>
+                                <input type="text" value="{{data.attributes.dream.value}}" disabled/>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.endurance'}}</label>
+                                <input type="number" name="data.vital.endurance.current" value="{{data.vital.endurance.current}}" min="0" max="{{endurance}}"/>
+                            </div>
+                            <div class="resource">
+                                <label>{{localize 'RDD.label.max'}}</label>
+                                <input type="text" name="data.vital.endurance.value" value="{{endurance}}" disabled/>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.health'}}</label>
+                                <input type="number" name="data.vital.health.current" value="{{data.vital.health.current}}" min="0" max="{{health}}"/>
+                            </div>
+                            <div class="resource">
+                                <label>{{localize 'RDD.label.max'}}</label>
+                                <input type="text" name="data.vital.health.value" value="{{health}}" disabled/>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="resource small">
+                                <label>{{localize 'RDD.actor.traveling.hightDream'}}</label>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.food'}}</label>
+                                <input type="number" name="data.traveling.food" value="{{data.traveling.food}}"/>
+                            </div>
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.water'}}</label>
+                                <input type="number" name="data.traveling.water" value="{{data.traveling.water}}"/>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.moral'}}</label>
+                                <input type="number" name="data.traveling.moral.value" value="{{data.traveling.moral.value}}"/>
+                            </div>
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.exaltation'}}</label>
+                                <input type="number" name="data.traveling.moral.exaltation" value="{{data.traveling.moral.exaltation}}"/>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.luck'}}</label>
+                                <input type="number" name="data.attributes.luck.current" value="{{data.attributes.luck.current}}" min="0" max="{{data.attributes.luck.value}}"/>
+                            </div>
+                            <div class="resource">
+                                <label>{{localize 'RDD.label.max'}}</label>
+                                <input type="text" value="{{data.attributes.luck.value}}" disabled/>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.destiny'}}</label>
+                                <input type="number" name="data.traveling.destiny.value" value="{{data.traveling.destiny.value}}"/>
+                            </div>
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.travellingPoint'}}</label>
+                                <input type="number" name="data.traveling.destiny.travellingPoint" value="{{data.traveling.destiny.travellingPoint}}"/>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.stress'}}</label>
+                                <input type="number" name="data.traveling.stress" value="{{data.traveling.stress}}"/>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="resource small">
+                                <label>{{localize 'RDD.actor.traveling.threshold.starvation'}}</label>
+                                <input type="text" name="data.traveling.threshold.starvation" disabled
+                                       value="{{starvation}}"/>
+                            </div>
+                            <div class="resource small">
+                                <label>{{localize 'RDD.actor.traveling.threshold.constitution'}}</label>
+                                <input type="text" name="data.traveling.threshold.constitution" disabled
+                                       value="{{constitution}}"/>
+                            </div>
+                            <div class="resource small">
+                                <label>{{localize 'RDD.actor.traveling.threshold.bulk'}}</label>
+                                <input type="text" name="data.traveling.threshold.bulk" disabled
+                                       value="{{bulk}}"/>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="resource small">
+                                <label>{{localize 'RDD.actor.traveling.damageBonus'}}</label>
+                                <input type="text" name="data.traveling.damageBonus" disabled
+                                       value="{{damageBonus}}"/>
+                            </div>
+                            <div class="resource">
+                                <label>{{localize 'RDD.actor.traveling.armorPenalty'}}</label>
+                                <input type="number" name="data.traveling.armorPenalty" value="{{data.traveling.armorPenalty}}"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tiredness -->
+                    <div style="width: 45%">
+                        <div class="tiredness">
+                            <div class="resource split">
+                                <label>{{localize 'RDD.actor.traveling.tiredness'}}</label>
+                                <input type="number" name="data.vital.tiredness.current" value="{{data.vital.tiredness.current}}" min="0" max="{{tiredness}}"/>
+                                <span>/</span>
+                                <input type="text" name="data.vital.tiredness.value" value="{{tiredness}}" disabled/>
+                            </div>
+                            <div class="flex">
+                                <div class="penalty"><label>0</label></div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 1}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 2}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 3}} {{updateTiredness 18}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 4}} {{updateTiredness 24}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 5}} {{updateTiredness 30}}/>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 6}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 7}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 8}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 9}} {{updateTiredness 22}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 10}} {{updateTiredness 28}}/>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 11}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 12}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 13}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 14}} {{updateTiredness 20}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 15}} {{updateTiredness 26}}/>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="penalty"><label>-1</label></div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 16}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 17}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 18}} {{updateTiredness 17}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 19}} {{updateTiredness 23}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 20}} {{updateTiredness 29}}/>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 21}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 22}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 23}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 24}} {{updateTiredness 21}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 25}} {{updateTiredness 27}}/>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 26}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 27}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 28}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 29}} {{updateTiredness 19}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 30}} {{updateTiredness 25}}/>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="penalty"><label>-2</label></div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 31}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 32}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 33}} {{updateTiredness 18}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 34}} {{updateTiredness 24}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 35}} {{updateTiredness 30}}/>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="penalty"><label>-3</label></div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 36}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 37}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 38}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 39}} {{updateTiredness 22}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 40}} {{updateTiredness 28}}/>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="penalty"><label>-4</label></div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 41}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 42}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 43}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 44}} {{updateTiredness 20}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 45}} {{updateTiredness 26}}/>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="penalty"><label>-5</label></div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 46}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 47}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 48}} {{updateTiredness 17}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 49}} {{updateTiredness 23}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 50}} {{updateTiredness 29}}/>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="penalty"><label>-6</label></div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 51}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 52}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 53}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 54}} {{updateTiredness 21}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 55}} {{updateTiredness 27}}/>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="penalty"><label>-7</label></div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 56}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 57}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 58}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 59}} {{updateTiredness 19}}/>
+                                    <input type="checkbox" class="cb_tiredness" {{checkTiredness 60}} {{updateTiredness 25}}/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <header class="attributes-header flexrow">
+                <span class="attribute-key">{{localize 'RDD.label.name'}}</span>
+                <span class="attribute-value">{{localize 'RDD.label.value'}}</span>
+                <span class="attribute-value">{{localize 'RDD.label.xp'}}</span>
+            </header>
+
+            <ol class="attributes-list">
+                {{#each data.attributes as |attr key|}}
+                {{#if (equals attr.computed 1)}}
+                {{else}}
+                <li class="attribute flexrow">
+                    <label>{{localize (concat 'RDD.actor.attribute.' key)}}</label>
+                    <span><input class="attribute-value" type="number" name="data.attributes.{{key}}.value" value="{{attr.value}}" min="6" max="15"/></span>
+                    {{#if (equals key 'size')}}
+                    <span></span>
+                    {{else}}
+                    <span><input class="attribute-value" type="number" name="data.attributes.{{key}}.xp" value="{{attr.xp}}" min="0"/></span>
+                    {{/if}}
+                </li>
+                {{/if}}
+                {{/each}}
+                <li class="attribute flexrow">
+                    <label>{{localize 'RDD.actor.attribute.melee'}}</label>
+                    <span><input class="attribute-value" type="text" name="data.attribute.melee.value" value="{{melee}}" disabled/></span>
+                    <span></span>
+                </li>
+                <li class="attribute flexrow">
+                    <label>{{localize 'RDD.actor.attribute.shoot'}}</label>
+                    <span><input class="attribute-value" type="text" name="data.attributes.shoot.value" value="{{shoot}}" disabled/></span>
+                    <span></span>
+                </li>
+                <li class="attribute flexrow">
+                    <label>{{localize 'RDD.actor.attribute.throw'}}</label>
+                    <span><input class="attribute-value" type="text" name="data.attributes.throw.value" value="{{throw}}" disabled/></span>
+                    <span></span>
+                </li>
+                <li class="attribute flexrow">
+                    <label>{{localize 'RDD.actor.attribute.stealth'}}</label>
+                    <span><input class="attribute-value" type="text" name="data.attributes.stealth.value" value="{{stealth}}" disabled/></span>
+                    <span></span>
+                </li>
+            </ol>
+        </div>
+
+        {{!-- Skills Tab --}}
+        <div class="tab skills" data-group="primary" data-tab="skills">
+            <div class="flex">
+                <div style="width: 50%">
+                    <!-- soft -->
+                    <ol class="skills-list">
+                        <header class="skills-header flexrow">
+                            <span class="skill-key">{{localize 'RDD.actor.skill.type.soft'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.value'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.xp'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.archetype'}}</span>
+                        </header>
+                        {{#each data.skills as |sk key|}}
+                        {{#if (equals sk.type 'soft')}}
+                        <li class="skills flexrow" data-skill="{{key}}">
+                            <label class="skill-key">{{localize (concat 'RDD.actor.skill.' key)}}</label>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.value" value="{{sk.value}}" min="{{skillMin sk.type}}"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.xp" value="{{sk.xp}}" min="0"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.arch" value="{{sk.arch}}"/></span>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                    </ol>
+                    <!-- specialized -->
+                    <ol class="skills-list">
+                        <header class="skills-header flexrow">
+                            <span class="skill-key">{{localize 'RDD.actor.skill.type.specialized'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.value'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.xp'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.archetype'}}</span>
+                        </header>
+                        {{#each data.skills as |sk key|}}
+                        {{#if (equals sk.type 'specialized')}}
+                        <li class="skills flexrow" data-skill="{{key}}">
+                            <label class="skill-key">{{localize (concat 'RDD.actor.skill.' key)}}</label>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.value" value="{{sk.value}}" min="{{skillMin sk.type}}"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.xp" value="{{sk.xp}}" min="0"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.arch" value="{{sk.arch}}"/></span>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                    </ol>
+                    <!-- melee -->
+                    <ol class="skills-list">
+                        <header class="skills-header flexrow">
+                            <span class="skill-key">{{localize 'RDD.actor.skill.type.melee'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.value'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.xp'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.archetype'}}</span>
+                        </header>
+                        {{#each data.skills as |sk key|}}
+                        {{#if (equals sk.type 'melee')}}
+                        <li class="skills flexrow" data-skill="{{key}}">
+                            <label class="skill-key">{{localize (concat 'RDD.actor.skill.' key)}}</label>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.value" value="{{sk.value}}" min="{{skillMin sk.type}}"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.xp" value="{{sk.xp}}" min="0"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.arch" value="{{sk.arch}}"/></span>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                    </ol>
+                </div>
+                <div style="width: 50%">
+                    <!-- special -->
+                    <ol class="skills-list">
+                        <header class="skills-header flexrow">
+                            <span class="skill-key">{{localize 'RDD.actor.skill.type.special'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.value'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.xp'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.archetype'}}</span>
+                        </header>
+                        {{#each data.skills as |sk key|}}
+                        {{#if (equals sk.type 'special')}}
+                        <li class="skills flexrow" data-skill="{{key}}">
+                            <label class="skill-key">{{localize (concat 'RDD.actor.skill.' key)}}</label>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.value" value="{{sk.value}}" min="{{skillMin sk.type}}"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.xp" value="{{sk.xp}}" min="0"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.arch" value="{{sk.arch}}"/></span>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                    </ol>
+                    <!-- knowledge -->
+                    <ol class="skills-list">
+                        <header class="skills-header flexrow">
+                            <span class="skill-key">{{localize 'RDD.actor.skill.type.knowledge'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.value'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.xp'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.archetype'}}</span>
+                        </header>
+                        {{#each data.skills as |sk key|}}
+                        {{#if (equals sk.type 'knowledge')}}
+                        <li class="skills flexrow" data-skill="{{key}}">
+                            <label class="skill-key">{{localize (concat 'RDD.actor.skill.' key)}}</label>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.value" value="{{sk.value}}" min="{{skillMin sk.type}}"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.xp" value="{{sk.xp}}" min="0"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.arch" value="{{sk.arch}}"/></span>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                    </ol>
+                    <!-- draconic -->
+                    <ol class="skills-list">
+                        <header class="skills-header flexrow">
+                            <span class="skill-key">{{localize 'RDD.actor.skill.type.draconic'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.value'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.draconic.xp.path'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.draconic.xp.spell'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.archetype'}}</span>
+                        </header>
+                        {{#each data.skills as |sk key|}}
+                        {{#if (equals sk.type 'draconic')}}
+                        <li class="skills flexrow" data-skill="{{key}}">
+                            <label class="skill-key">{{localize (concat 'RDD.actor.skill.' key)}}</label>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.value" value="{{sk.value}}" min="{{skillMin sk.type}}"/></span>
+                            <span><input class="skill-small-value" type="number" name="data.skills.{{group}}.{{key}}.xp.path" value="{{grp.xp.path}}" min="0"/></span>
+                            <span><input class="skill-small-value" type="number" name="data.skills.{{group}}.{{key}}.xp.spell" value="{{grp.xp.spell}}" min="0"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.arch" value="{{sk.arch}}"/></span>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                    </ol>
+                    <!-- distance -->
+                    <ol class="skills-list">
+                        <header class="skills-header flexrow">
+                            <span class="skill-key">{{localize 'RDD.actor.skill.type.distance'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.value'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.xp'}}</span>
+                            <span class="skill-value">{{localize 'RDD.label.archetype'}}</span>
+                        </header>
+                        {{#each data.skills as |sk key|}}
+                        {{#if (equals sk.type 'distance')}}
+                        <li class="skills flexrow" data-skill="{{key}}">
+                            <label class="skill-key">{{localize (concat 'RDD.actor.skill.' key)}}</label>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.value" value="{{sk.value}}" min="{{skillMin sk.type}}"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.xp" value="{{sk.xp}}" min="0"/></span>
+                            <span><input class="skill-value" type="number" name="data.skills.{{key}}.arch" value="{{sk.arch}}"/></span>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        {{!-- Owned Items Tab --}}
+        <div class="tab items" data-group="primary" data-tab="items">
+            <ol class="item-list">
+                {{#each actor.items as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+                    <h4 class="item-name">{{item.name}}</h4>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </div>
+
+        {{!-- Spells Tab --}}
+        <div class="tab spells" data-group="primary" data-tab="spells">
+            Sorts
+        </div>
+
+    </section>
+</form>
+
